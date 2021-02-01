@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1 id="title">Cadastro</h1>
+        <form action="#" method="POST">
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" maxlength="80" minlength="3" placeholder="Digite o nome" id="nome" name="nome" size="15" required>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" maxlength="80" minlength="5" required size="15">
+            </p>
+            <p>
+                <label for="nascimento" required>Nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento">
+                <label for="horaNascimento">Hora:</label>
+                <input type="time" name="horaNascimento" id="horaNascimento">
+            </p>
+            <p>
+            <fieldset required>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="fem" value="f"> Feminino <br>
+                <input type="radio" name="sexo" id="mas" value="m"> Masculino <br>
+                <input type="radio" name="sexo" id="out" value="o"> Outro
+            </fieldset>
+            </p>
+            <p>
+            <fieldset>
+                <legend>Benefícios</legend>
+                <input type="checkbox" name="valetransporte" id="transporte" value="vt">Vale Transporte
+                <br>
+                <input type="checkbox" name="valerefeicao" id="refeicao" value="vr">Vale Refeição
+                <br>
+                <input type="checkbox" name="conveniomedico" id="medico" value="cv">Convênio médico
+                <br>
+                <input type="checkbox" name="convenioodontologico" id="odonto" value="co">Convênio odontológico
+            </fieldset>
+            </p>
+            <p>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" minlength="6" maxlength="6" size="10">
+                <label for="confirmarsenha">Confirmar senha:</label>
+                <input type="password" name="confirmarsenha" id="confirmarsenha" minlength="6" maxlength="6" size="10">
+            </p>
+            <p>
+                <input name="observacao" id="observacao" size="50%" maxlength="100" placeholder="Observação">
+            </p>
+            <p>
+                <input type="submit" id="enviar" value="Enviar">
+                <input type="reset" id="apagar" value="Apagar">
+            </p>
+        </form>
+    </div>
+
+</body>
+
+</html>

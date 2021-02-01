@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(241, 225, 228);  
+}
+#title{
+    text-align: center;
+}
+form{
+    padding-left: 20px;
+}
+form p{
+    padding: 5px;
+
+}
+fieldset{
+    width: 50%;
+}
+div{
+    border-radius: 20px;
+    background-color: rgb(231, 162, 240);
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+#enviar{
+    background: rgb(153, 228, 153);
+    border: 80px;
+    padding: 10px;
+    border-radius: 3px;
+}
+#apagar{
+    background: rgb(228, 153, 153);
+    border: 80px;
+    padding: 10px;
+    border-radius: 3px;
+}
